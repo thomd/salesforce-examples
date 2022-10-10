@@ -8,18 +8,18 @@ This example is based on the Trail [Build a Custom Theme Layout Component for Ex
 
 ## Setup
 
-Login into a DevHub enabled Org, e.g. a Trailhead playground:
+Login into a DevHub enabled org, e.g. a Trailhead playground:
 
     sfdx auth:web:login -d -a myDevHub
     cd aura-theme-layout-with-custom-search
 
-Create a sxcratch Org and deploy:
+Create a scratch org and deploy:
 
     sfdx force:org:create -f config/project-scratch-def.json -s -a myScratch -v myDevHub
     sfdx force:source:deploy -x manifest/package.xml
     sfdx force:org:open
 
-Enable experience cloud in scratch Org: `Setup > Feature Settings > Digital Experiences > Settings`.
+Enable experience cloud in scratch org: `Setup > Feature Settings > Digital Experiences > Settings`.
 
 Create new site using the `Build Your Own (Aura)` template. Then activate site in `Administration > Settings` and open `Builder`.
 
