@@ -25,17 +25,20 @@ Create new site using the `Build Your Own (Aura)` template. Then activate site i
 
 ## Apply Theme to a Page
 
-1. Open `Experience Builder > Settings > Theme`
-    1. Click `Configure` tab
-    1. Click on `New Theme Layout` button
-    1. Enter **name**, e.g. `CondensedThemeLayout`
-    1. Select **Condensed Theme Layout**
-    1. Click on `Gear Icon` and select `Cloud Kicks Search` as **Search Component**
-1. Click on top `Pages` dropdown
-    1. Select a page or create a new page using the bottom `+ New Page` button
-    1. Click on page properties (`Gear Icon`)
-    1. Select `Override the default theme layout for this page` in **Layout** section
-    1. Select new layout, e.g. `CondensedThemeLayout`
+Open `Experience Builder > Settings > Theme`
+
+1. Click `Configure` tab
+1. Click on `New Theme Layout` button
+1. Enter **name**, e.g. `CondensedThemeLayout`
+1. Select **Condensed Theme Layout**
+1. Click on `Gear Icon` and select `Cloud Kicks Search` as **Search Component**
+
+Click on top `Pages` dropdown
+
+1. Select a page or create a new page using the bottom `+ New Page` button
+1. Click on page properties (`Gear Icon`)
+1. Select `Override the default theme layout for this page` in **Layout** section
+1. Select new layout, e.g. `CondensedThemeLayout`
 
 ## TODO
 
