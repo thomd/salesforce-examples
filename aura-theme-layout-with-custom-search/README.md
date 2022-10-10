@@ -35,4 +35,4 @@ This example is based on the Trail [Build a Custom Theme Layout Component for Ex
 
 ## TODO
 
-    [] Test Controller
+[ ] Test Controller
