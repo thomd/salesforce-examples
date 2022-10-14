@@ -9,7 +9,7 @@ This example is based on the Trail [Build a Simple Flow](https://trailhead.sales
 Login into a DevHub enabled org, e.g. a Trailhead playground:
 
     sfdx auth:web:login -d -a myDevHub
-    cd aura-theme-layout-with-custom-search
+    cd simple-flow
 
 Create a scratch org and deploy:
 
