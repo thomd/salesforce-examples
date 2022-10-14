@@ -1,6 +1,6 @@
 # Simple Flow
 
-This example is based on the Trail [Build a Simple Flow](https://trailhead.salesforce.com/content/learn/projects/build-a-simple-flow) and contains the following concepts:
+This example is based on the Trail [Build a Simple Flow](https://trailhead.salesforce.com/content/learn/projects/build-a-simple-flow) and [Flow Builder](https://trailhead.salesforce.com/content/learn/modules/flow-builder) and contains the following concepts:
 
 * Flow Builder
 
