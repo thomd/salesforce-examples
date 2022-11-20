@@ -1,18 +1,48 @@
-# Salesforce DX Project: Next Steps
+# Search Objects and Fields
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This is a Lightning Component to list all objects that are present in an Org and when selecting a particular object all the respective fields appear.
 
-## How Do You Plan to Deploy Your Changes?
+It contains the following concepts:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+* Lightning web Component (Aura)
+* Lightning App
+* System Debug Log
 
-## Configure Your Salesforce DX Project
+## Setup
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Login into a DevHub enabled org, e.g. a Trailhead playground:
 
-## Read All About It
+    sfdx auth:web:login -d -a myDevHub
+    git clone https://github.com/thomd/salesforce-examples.git
+    cd salesforce-examples/show-all-objects-and-fields
+    npm install
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Create a scratch org and deploy:
+
+    sfdx force:org:create -f config/project-scratch-def.json -s -a myScratch -v myDevHub
+    sfdx force:source:deploy -x manifest/package.xml
+    sfdx force:org:open
+
+## Create a Lightning App
+
+1. Go to `Setup > Apps > App Manager` and click on `New Lightning App`
+1. Enter app name **Objects and Fields**
+1. Click three times `Next`
+1. In step **User Profiles**, select `System Administrator`
+1. Click `Save and Finish`
+1. On right-dropdown, select `Edit` to enter Lightning App Builder
+1. From top navigation, select `Pages > New Page`
+1. Select `App Page` and click `Next`
+1. Enter label **Show Objects and Fields** and click `Next`
+1. Select `One Region` and click `Next`
+1. Drag-Drop custom component **FetchObjects** into app canvas
+1. Click top-right `Save`
+1. In modal, click on `Activate`
+1. Select tab `LIGHTNING EXPERIENCE`
+1. Select on left list the `Objects and Fields` app, then click on right button `Add page to app`
+1. Click on `Save`
+
+## Open App
+
+Open `Objects and Fields` from App Launcher
+
